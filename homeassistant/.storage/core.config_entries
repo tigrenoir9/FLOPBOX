@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "minor_version": 5,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {"created_at":"2025-11-01T17:33:53.745589+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"sun","entry_id":"01K907Q6PHA38G43MB8G9B95WP","minor_version":1,"modified_at":"2025-11-01T17:33:53.745620+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"import","subentries":[],"title":"Sun","unique_id":null,"version":1},
+      {"created_at":"2025-11-01T17:33:55.103909+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"go2rtc","entry_id":"01K907Q80ZN74FA76EFV2GTGV6","minor_version":1,"modified_at":"2025-11-01T17:33:55.103936+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"system","subentries":[],"title":"go2rtc","unique_id":null,"version":1},
+      {"created_at":"2025-11-01T17:33:55.274158+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"backup","entry_id":"01K907Q86ACXR8WYS7VA94P274","minor_version":1,"modified_at":"2025-11-01T17:33:55.274178+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"system","subentries":[],"title":"Backup","unique_id":null,"version":1}
+    ]
+  }
+}

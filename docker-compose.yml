@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./homeassistant:/config
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8123:8123"
+
+  mqtt:
+    container_name: mosquitto
+    image: eclipse-mosquitto:latest
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+
+  nodered:
+    container_name: nodered
+    image: nodered/node-red:latest
+    volumes:
+      - ./nodered:/data
+    ports:
+      - "1880:1880"
+    restart: unless-stopped
