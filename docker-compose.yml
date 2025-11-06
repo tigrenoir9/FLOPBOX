@@ -33,15 +33,3 @@ services:
     ports:
       - "1880:1880"
     restart: unless-stopped
-
-  zigbee2mqtt:
-    container_name: zigbee2mqtt
-    image: koenkk/zigbee2mqtt:latest
-    volumes:
-      - ./zigbee2mqtt:/app/data
-    restart: unless-stopped
-    network_mode: host
-    environment:
-      - TZ=Europe/Paris
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
