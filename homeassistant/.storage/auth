@@ -14,6 +14,17 @@
         "name": "Home Assistant Content",
         "system_generated": true,
         "local_only": false
+      },
+      {
+        "id": "374be18c249041258443718ede82ec1b",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "flopbox",
+        "system_generated": false,
+        "local_only": false
       }
     ],
     "groups": [
@@ -30,7 +41,17 @@
         "name": "Read Only"
       }
     ],
-    "credentials": [],
+    "credentials": [
+      {
+        "id": "099e9b537bd047078b82d07114821c01",
+        "user_id": "374be18c249041258443718ede82ec1b",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "flopbox"
+        }
+      }
+    ],
     "refresh_tokens": [
       {
         "id": "7350d091d2df4a6591972ae8b01c89d2",
@@ -47,6 +68,40 @@
         "last_used_ip": null,
         "expire_at": null,
         "credential_id": null,
+        "version": "2025.10.4"
+      },
+      {
+        "id": "2a441279bfc9473d942099435f420661",
+        "user_id": "374be18c249041258443718ede82ec1b",
+        "client_id": "http://192.168.1.160:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-11-03T18:42:26.182717+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "37e0b57689cb2ef8e694a5d2e1c9ce955c41dbf0858baa3f977b3ee2bf2367ce9514265706c0c597fad44af4cf080f8cba840641eb4d40e3aa1834e418edb6b6",
+        "jwt_key": "7b8d48563b56d831540ce1452ad3c02f890d0e36436680d3c541cecbfc3da01cea39bd3f2eaeb94e9e91c3ec22069511ed92b0cbedc5d977116cfa9caae1b02c",
+        "last_used_at": "2025-11-03T18:42:26.183076+00:00",
+        "last_used_ip": "192.168.1.94",
+        "expire_at": 1769971346.183076,
+        "credential_id": "099e9b537bd047078b82d07114821c01",
+        "version": "2025.10.4"
+      },
+      {
+        "id": "5346eb96214149f1a0382b7ffc045518",
+        "user_id": "374be18c249041258443718ede82ec1b",
+        "client_id": "http://192.168.1.160:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-11-05T11:16:34.193408+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "9457456eed03d8278070a2afc6279f4172bb73999fe7ac717aedf0dde8bb6dc64a7e480ad27dd282d29d69bf89d2f6e08a1d7b7bcf6b238d200a1e42204a0c0a",
+        "jwt_key": "0f9849ec53c63adcffea3bc45e896ec6968ebbb507832f8d4647d495bd0b1bb8bc6c635d7d5d4e33318e438479eadbaa24ca80030b8c290f61f348612a17dfe6",
+        "last_used_at": "2025-11-05T18:01:01.232292+00:00",
+        "last_used_ip": "192.168.1.52",
+        "expire_at": 1770141661.232292,
+        "credential_id": "099e9b537bd047078b82d07114821c01",
         "version": "2025.10.4"
       }
     ]

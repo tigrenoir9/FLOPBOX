@@ -7,8 +7,11 @@ services:
     volumes:
       - ./homeassistant:/config
     restart: unless-stopped
-    ports:
-      - "127.0.0.1:8123:8123"
+    network_mode: host
+    #ports:
+    #  - "127.0.0.1:8123:8123"
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
 
   mqtt:
     container_name: mosquitto
@@ -30,3 +33,15 @@ services:
     ports:
       - "1880:1880"
     restart: unless-stopped
+
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: koenkk/zigbee2mqtt:latest
+    volumes:
+      - ./zigbee2mqtt:/app/data
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - TZ=Europe/Paris
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0

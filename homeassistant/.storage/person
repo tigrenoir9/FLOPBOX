@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "flopbox",
+        "name": "flopbox",
+        "user_id": "374be18c249041258443718ede82ec1b",
+        "device_trackers": []
+      }
+    ]
+  }
+}

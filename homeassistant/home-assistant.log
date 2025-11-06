@@ -1,5 +1,97 @@
-2025-11-01 18:14:11.999 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2025-11-01 18:17:03.853 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2025-11-01 18:18:44.449 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2025-11-01 18:22:39.826 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
-2025-11-01 18:22:52.583 ERROR (MainThread) [homeassistant.components.http.forwarded] Received X-Forwarded-For header from an untrusted proxy 172.18.0.1
+2025-11-03 19:01:42.917 ERROR (MainThread) [habluetooth.manager] Missing required permissions for Bluetooth management: Missing NET_ADMIN/NET_RAW capabilities for Bluetooth management. Automatic adapter recovery is unavailable. Add NET_ADMIN and NET_RAW capabilities to the container to enable it
+2025-11-03 19:02:32.879 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: {('zha', '01K95G5R1FNWDMHYTKQ2NJC062'): 179740.929991559}
+2025-11-03 23:02:42.638 ERROR (MainThread) [zigpy_znp.uart] Received an exception while passing frame to API: TransportFrame(payload=GeneralFrame(header=CommandHeader(id=0xB2, subsystem=Subsystem.ZDO, type=CommandType.AREQ), data=b'\x52\x42\x84'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 417, in from_frame
+    params[param.name], data = param.type.deserialize(data)
+                               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 337, in deserialize
+    fields, data = cls._deserialize_internal(cls.fields, data)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 323, in _deserialize_internal
+    value, data = field.type.deserialize(data)
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/basic.py", line 199, in deserialize
+    raise ValueError(f"Data is too short to contain {byte_size} bytes")
+ValueError: Data is too short to contain 1 bytes
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/uart.py", line 56, in data_received
+    self._api.frame_received(frame.payload)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/api.py", line 860, in frame_received
+    command = command_cls.from_frame(frame, align=self.nvram.align_structs)
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 424, in from_frame
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Frame data is truncated (parsed {'Src': 0x4252, 'Status': <Status.NOT_SUPPORTED: 132>}), required parameter remains: Param(name='Routes', type=<class 'zigpy.zdo.types.Routes'>, description='Routes', optional=False)
+2025-11-05 15:12:37.335 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [281472000509408] Unexpected exception
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 264, in handle_call_service
+    response = await hass.services.async_call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2835, in async_call
+    response_data = await coro
+                    ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2878, in _execute_service
+    return await target(service_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 852, in entity_service_call
+    single_response = await _handle_entity_call(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        hass, entity, func, data, call.context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 924, in _handle_entity_call
+    result = await task
+             ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/zha/helpers.py", line 1383, in handler
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/zha/switch.py", line 57, in async_turn_on
+    await self.entity_data.entity.async_turn_on()
+  File "/usr/local/lib/python3.13/site-packages/zha/application/platforms/switch.py", line 99, in async_turn_on
+    await self._on_off_cluster_handler.turn_on()
+  File "/usr/local/lib/python3.13/site-packages/zha/zigbee/cluster_handlers/general.py", line 571, in turn_on
+    if result[1] is not Status.SUCCESS:
+       ~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/zcl/foundation.py", line 1201, in __getitem__
+    return self.as_tuple()[item]
+           ~~~~~~~~~~~~~~~^^^^^^
+IndexError: tuple index out of range
+2025-11-05 18:55:25.597 WARNING (MainThread) [zigpy_znp.zigbee.application] Failed to reset before disconnect: 'NoneType' object has no attribute 'write'
+2025-11-05 22:55:47.419 ERROR (MainThread) [zigpy_znp.uart] Received an exception while passing frame to API: TransportFrame(payload=GeneralFrame(header=CommandHeader(id=0xB2, subsystem=Subsystem.ZDO, type=CommandType.AREQ), data=b'\x52\x42\x84'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 417, in from_frame
+    params[param.name], data = param.type.deserialize(data)
+                               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 337, in deserialize
+    fields, data = cls._deserialize_internal(cls.fields, data)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 323, in _deserialize_internal
+    value, data = field.type.deserialize(data)
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/basic.py", line 199, in deserialize
+    raise ValueError(f"Data is too short to contain {byte_size} bytes")
+ValueError: Data is too short to contain 1 bytes
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/uart.py", line 56, in data_received
+    self._api.frame_received(frame.payload)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/api.py", line 860, in frame_received
+    command = command_cls.from_frame(frame, align=self.nvram.align_structs)
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 424, in from_frame
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Frame data is truncated (parsed {'Src': 0x4252, 'Status': <Status.NOT_SUPPORTED: 132>}), required parameter remains: Param(name='Routes', type=<class 'zigpy.zdo.types.Routes'>, description='Routes', optional=False)

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "flopbox",
+        "password": "JDJiJDEyJGUvM091VGR5anlpWUttRnpETld0bXU3WUxLNkRMQ3dSWUEua0VLZGR1OVJkNGwzNEN0TFpD"
+      }
+    ]
+  }
+}
