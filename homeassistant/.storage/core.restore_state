@@ -6,7 +6,7 @@
     {
       "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-11-06T13:30:03.651693+00:00","last_reported":"2025-11-06T13:30:03.651693+00:00","last_updated":"2025-11-06T13:30:03.651693+00:00","context":{"id":"01K9CNRAG3M0C68FAZ3MKMAF07","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Sauvegarde automatique"},"last_changed":"2025-11-06T13:30:03.977979+00:00","last_reported":"2025-11-06T13:30:03.977979+00:00","last_updated":"2025-11-06T13:30:03.977979+00:00","context":{"id":"01K9CNRAT9V2K1W3AAN263RVDM","parent_id":null,"user_id":null}},
@@ -14,62 +14,62 @@
         "last_event_type": null,
         "last_event_attributes": null
       },
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"person.flopbox","state":"unknown","attributes":{"editable":true,"id":"flopbox","device_trackers":[],"user_id":"374be18c249041258443718ede82ec1b","friendly_name":"flopbox"},"last_changed":"2025-11-06T13:30:06.654667+00:00","last_reported":"2025-11-06T13:30:41.168868+00:00","last_updated":"2025-11-06T13:30:41.168868+00:00","context":{"id":"01K9CNSF4GPGCAHNYVVSJB3EK9","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-11-06T13:30:21.592394+00:00","last_reported":"2025-11-06T13:30:21.592394+00:00","last_updated":"2025-11-06T13:30:21.592394+00:00","context":{"id":"01K9CNRW0RZXXMHSHAM0RE6V0N","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"button.tz3000_okaz9tjs_ts011f_identifier","state":"unknown","attributes":{"device_class":"identify","friendly_name":"_TZ3000_okaz9tjs TS011F Identifier"},"last_changed":"2025-11-06T13:30:41.097824+00:00","last_reported":"2025-11-06T13:30:41.097824+00:00","last_updated":"2025-11-06T13:30:41.097824+00:00","context":{"id":"01K9CNSF29V2Z1AZKS3HV88FEB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"select.tz3000_okaz9tjs_ts011f_etat_de_mise_sous_tension","state":"LastState","attributes":{"options":["Off","On","LastState"],"friendly_name":"_TZ3000_okaz9tjs TS011F État de mise sous tension"},"last_changed":"2025-11-06T13:30:41.101529+00:00","last_reported":"2025-11-06T13:30:41.101529+00:00","last_updated":"2025-11-06T13:30:41.101529+00:00","context":{"id":"01K9CNSF2DESJGAJTSTE5EG29K","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"select.tz3000_okaz9tjs_ts011f_mode_de_retroeclairage","state":"LightWhenOn","attributes":{"options":["Off","LightWhenOn","LightWhenOff"],"friendly_name":"_TZ3000_okaz9tjs TS011F Mode de rétroéclairage"},"last_changed":"2025-11-06T13:30:41.103420+00:00","last_reported":"2025-11-06T13:30:41.103420+00:00","last_updated":"2025-11-06T13:30:41.103420+00:00","context":{"id":"01K9CNSF2FZNE2TNTBZ3731MTS","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_courant","state":"0.022","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"_TZ3000_okaz9tjs TS011F Courant"},"last_changed":"2025-11-06T14:29:17.957568+00:00","last_reported":"2025-11-06T14:29:17.957568+00:00","last_updated":"2025-11-06T14:29:17.957568+00:00","context":{"id":"01K9CS4SG5S81W2FYFACAYH66K","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_courant","state":"0.016","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"_TZ3000_okaz9tjs TS011F Courant"},"last_changed":"2025-11-06T14:45:35.015624+00:00","last_reported":"2025-11-06T14:45:35.015624+00:00","last_updated":"2025-11-06T14:45:35.015624+00:00","context":{"id":"01K9CT2KN7FPJ5WWMF8FEKWCYW","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_tension","state":"242.0","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"_TZ3000_okaz9tjs TS011F Tension"},"last_changed":"2025-11-06T14:29:17.959817+00:00","last_reported":"2025-11-06T14:29:17.959817+00:00","last_updated":"2025-11-06T14:29:17.959817+00:00","context":{"id":"01K9CS4SG7AGKAJCJPAP5QPAFD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_tension","state":"243.0","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"_TZ3000_okaz9tjs TS011F Tension"},"last_changed":"2025-11-06T14:44:55.908778+00:00","last_reported":"2025-11-06T14:44:55.908778+00:00","last_updated":"2025-11-06T14:44:55.908778+00:00","context":{"id":"01K9CT1DF4TCCK67114DSVFJVK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_puissance","state":"1.0","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"_TZ3000_okaz9tjs TS011F Puissance"},"last_changed":"2025-11-06T14:30:36.108711+00:00","last_reported":"2025-11-06T14:30:36.108711+00:00","last_updated":"2025-11-06T14:30:36.108711+00:00","context":{"id":"01K9CS75TC8W60RYKCPHSZQEMP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_puissance","state":"1.0","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"_TZ3000_okaz9tjs TS011F Puissance"},"last_changed":"2025-11-06T14:43:37.709323+00:00","last_reported":"2025-11-06T14:43:37.709323+00:00","last_updated":"2025-11-06T14:43:37.709323+00:00","context":{"id":"01K9CSZ13D7981SR67NQHA4W9Y","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"sensor.tz3000_okaz9tjs_ts011f_consommation","state":"1.36","attributes":{"state_class":"total_increasing","zcl_unit_of_measurement":0,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"_TZ3000_okaz9tjs TS011F Consommation"},"last_changed":"2025-11-06T13:30:41.119813+00:00","last_reported":"2025-11-06T13:30:41.119813+00:00","last_updated":"2025-11-06T13:30:41.119813+00:00","context":{"id":"01K9CNSF2Z1GTP457JZH54YQBX","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"switch.tz3000_okaz9tjs_ts011f","state":"on","attributes":{"friendly_name":"_TZ3000_okaz9tjs TS011F"},"last_changed":"2025-11-06T13:30:41.122951+00:00","last_reported":"2025-11-06T13:30:41.122951+00:00","last_updated":"2025-11-06T13:30:41.122951+00:00","context":{"id":"01K9CNSF326NNEDAFR0AVGZ4GN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     },
     {
       "state": {"entity_id":"switch.tz3000_okaz9tjs_ts011f_securite_enfants","state":"off","attributes":{"friendly_name":"_TZ3000_okaz9tjs TS011F Sécurité enfants"},"last_changed":"2025-11-06T13:30:41.124538+00:00","last_reported":"2025-11-06T13:30:41.124538+00:00","last_updated":"2025-11-06T13:30:41.124538+00:00","context":{"id":"01K9CNSF34BBJ1FN7G3P11WC4Z","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-11-06T14:30:41.172243+00:00"
+      "last_seen": "2025-11-06T14:45:41.173356+00:00"
     }
   ]
 }
