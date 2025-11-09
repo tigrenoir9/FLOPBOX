@@ -1,1 +1,32 @@
-2025-11-06 13:19:15.080 ERROR (MainThread) [habluetooth.manager] Missing required permissions for Bluetooth management: Missing NET_ADMIN/NET_RAW capabilities for Bluetooth management. Automatic adapter recovery is unavailable. Add NET_ADMIN and NET_RAW capabilities to the container to enable it
+2025-11-07 15:03:33.177 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-11-07 15:03:33.320 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=16 from 2025-11-06 13:29:52.677327)
+2025-11-07 15:03:45.749 ERROR (MainThread) [habluetooth.manager] Missing required permissions for Bluetooth management: Missing NET_ADMIN/NET_RAW capabilities for Bluetooth management. Automatic adapter recovery is unavailable. Add NET_ADMIN and NET_RAW capabilities to the container to enable it
+2025-11-07 19:04:23.978 ERROR (MainThread) [zigpy_znp.uart] Received an exception while passing frame to API: TransportFrame(payload=GeneralFrame(header=CommandHeader(id=0xB2, subsystem=Subsystem.ZDO, type=CommandType.AREQ), data=b'\x52\x42\x84'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 417, in from_frame
+    params[param.name], data = param.type.deserialize(data)
+                               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 337, in deserialize
+    fields, data = cls._deserialize_internal(cls.fields, data)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/struct.py", line 323, in _deserialize_internal
+    value, data = field.type.deserialize(data)
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy/types/basic.py", line 199, in deserialize
+    raise ValueError(f"Data is too short to contain {byte_size} bytes")
+ValueError: Data is too short to contain 1 bytes
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/uart.py", line 56, in data_received
+    self._api.frame_received(frame.payload)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/api.py", line 860, in frame_received
+    command = command_cls.from_frame(frame, align=self.nvram.align_structs)
+  File "/usr/local/lib/python3.13/site-packages/zigpy_znp/types/commands.py", line 424, in from_frame
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Frame data is truncated (parsed {'Src': 0x4252, 'Status': <Status.NOT_SUPPORTED: 132>}), required parameter remains: Param(name='Routes', type=<class 'zigpy.zdo.types.Routes'>, description='Routes', optional=False)
+2025-11-08 12:04:22.635 ERROR (MainThread) [homeassistant.components.homeassistant_alerts.coordinator] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Timeout while contacting DNS servers]

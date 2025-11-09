@@ -1,3 +1,4 @@
-2025-11-06 13:29:52.775 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2025-11-06 13:29:52.968 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=15 from 2025-11-06 13:19:02.367423)
-2025-11-06 13:30:04.464 ERROR (MainThread) [habluetooth.manager] Missing required permissions for Bluetooth management: Missing NET_ADMIN/NET_RAW capabilities for Bluetooth management. Automatic adapter recovery is unavailable. Add NET_ADMIN and NET_RAW capabilities to the container to enable it
+2025-11-09 17:43:15.216 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-11-09 17:43:15.445 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=17 from 2025-11-07 15:03:33.102284)
+2025-11-09 17:43:34.069 ERROR (MainThread) [habluetooth.manager] Missing required permissions for Bluetooth management: Missing NET_ADMIN/NET_RAW capabilities for Bluetooth management. Automatic adapter recovery is unavailable. Add NET_ADMIN and NET_RAW capabilities to the container to enable it
+2025-11-09 17:44:19.230 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: {('zha', '01K95G5R1FNWDMHYTKQ2NJC062'): 151.904393749}
